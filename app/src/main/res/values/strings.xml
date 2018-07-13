@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Rate_your_assignment</string>
+    <string name="description">Image to display</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
