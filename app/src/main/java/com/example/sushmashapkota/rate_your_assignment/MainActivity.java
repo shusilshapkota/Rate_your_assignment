@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void signUpOrLogIn(View view) {
-        Log.i("AppInfo", String.valueOf(usernameField.getText())); //To print the username, just to check if it records your username
+     /*   Log.i("AppInfo", String.valueOf(usernameField.getText())); //To print the username, just to check if it records your username
         Log.i("AppInfo", String.valueOf(passwordField.getText())); //To print the password, just to check if it records your password
 
         //studentOrTeacherSwitch is the variable
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             });
         }
-
+*/
     }
 
 
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         usernameField.setOnKeyListener(this);
         passwordField.setOnKeyListener(this);
 
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        //   ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
 
 

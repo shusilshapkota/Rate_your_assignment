@@ -5,4 +5,5 @@
     <string name="password">password</string>
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
+    <string name="students_record">Students Record</string>
 </resources>
