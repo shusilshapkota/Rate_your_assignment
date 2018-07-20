@@ -10,9 +10,6 @@ package com.example.sushmashapkota.rate_your_assignment;
 
 import android.app.Application;
 
-import com.parse.Parse;
-import com.parse.ParseACL;
-
 
 public class StarterApplication extends Application {
 
@@ -20,11 +17,11 @@ public class StarterApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+/*
+        //Parse.enableLocalDatastore(this);
 
-        Parse.enableLocalDatastore(this);
 
-
-        Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
+      //  Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
          //Enter your application ID
                 .applicationId("pistagramrfdvhygfyyuhurfudhhr")
                 .clientKey(null)
@@ -35,6 +32,6 @@ public class StarterApplication extends Application {
 
         ParseACL defaultACL = new ParseACL();
 
-        ParseACL.setDefaultACL(defaultACL, true);
+        ParseACL.setDefaultACL(defaultACL, true);*/
     }
 }

@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:contentDescription="@string/description"
-        android:src="@drawable/logo"
-        android:layout_above="@+id/text1"
-        android:layout_alignRight="@+id/text1"
-        android:layout_alignEnd="@+id/text1"
-        android:layout_marginBottom="30dp"
-        tools:ignore="RtlHardcoded" />
-
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
         android:layout_above="@+id/password"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="12dp"
-        tools:ignore="RtlHardcoded" />
-
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/password"
@@ -42,8 +29,7 @@
         android:layout_above="@+id/signUpButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp"
-        tools:ignore="RtlHardcoded" />
+        android:layout_marginBottom="12dp" />
 
     <Button
         android:id="@+id/signUpButton"
@@ -116,5 +102,16 @@
         android:layout_toEndOf="@+id/studentOrTeacherSwitch"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/logo"
+        tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>
