@@ -6,25 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/logo"
+        tools:ignore="RtlHardcoded" />
+
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
         android:layout_above="@+id/password"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint="@string/username"
-        android:inputType="textPersonName" />
+        android:layout_marginBottom="12dp" />
+
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="password"
         android:inputType="textPassword"
         android:layout_above="@+id/signUpButton"
         android:layout_alignParentLeft="true"
@@ -37,7 +49,7 @@
         android:layout_height="wrap_content"
         android:elevation="0dp"
         android:onClick="signUpOrLogIn"
-        android:text="@string/sign_up"
+        android:text="Sign Up"
         android:layout_alignBaseline="@+id/changeSignUpMode"
         android:layout_alignBottom="@+id/changeSignUpMode"
         android:layout_centerHorizontal="true" />
@@ -52,16 +64,15 @@
         android:layout_marginBottom="39dp"
         android:layout_marginEnd="38dp"
         android:layout_marginRight="38dp"
-        android:text="@string/log_in"
-        android:textColor="@android:color/holo_blue_bright"
-        tools:ignore="RelativeOverlap,RtlHardcoded" />
+        android:text="Log In"
+        android:textColor="@android:color/holo_blue_bright" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/students_record"
-        android:textColor="@color/colorAccent"
+        android:text="Students Record"
+        android:textColor="@color/abc_input_method_navigation_guard"
         android:typeface="serif"
         android:textSize="30sp"
         android:layout_above="@+id/studentOrTeacherSwitch"
@@ -103,15 +114,5 @@
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/text1"
-        android:layout_marginTop="30dp"
-        android:contentDescription="@string/description"
-        android:src="@drawable/logo"
-        tools:ignore="RtlHardcoded" />
 
 </RelativeLayout>
