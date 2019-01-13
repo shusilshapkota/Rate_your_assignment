@@ -17,6 +17,14 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.LogInCallback;
+import com.parse.ParseAnalytics;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
+
+import com.example.sushmashapkota.rate_your_assignment.R;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
     // Declaring Variables
     EditText usernameField; //Username
@@ -29,13 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView logo;
     RelativeLayout layout;
     Switch studentOrTeacherSwitch; //Switch
-
-    public void signUpOrLogIn(View view) {
-
-    }
-
-
-/*
 
     @Override
     // When you press the enter button, it calls the function signUpOrLogIn which decides either to sign you up or Log In
@@ -88,8 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void signUpOrLogIn(View view) {
-     */
-/*   Log.i("AppInfo", String.valueOf(usernameField.getText())); //To print the username, just to check if it records your username
+        Log.i("AppInfo", String.valueOf(usernameField.getText())); //To print the username, just to check if it records your username
         Log.i("AppInfo", String.valueOf(passwordField.getText())); //To print the password, just to check if it records your password
 
         //studentOrTeacherSwitch is the variable
@@ -140,7 +140,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             });
         }
-*//*
 
     }
 
@@ -177,11 +176,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         usernameField.setOnKeyListener(this);
         passwordField.setOnKeyListener(this);
 
-        //   ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
     }
-*/
 
-/*
+
     // This is where you type code if you want menu or setting, I'm not using setting in my first viewController
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -197,15 +195,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }*/
-
-    @Override
-    public void onClick(View view) {
-
-    }
-
-    @Override
-    public boolean onKey(View view, int i, KeyEvent keyEvent) {
-        return false;
     }
 }
