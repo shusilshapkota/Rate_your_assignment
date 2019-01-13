@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rate_your_assignment.Profile">
+
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/text3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="297dp"
+        android:layout_alignBottom="@+id/ratingBar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your rating will appear here"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="379dp"
+        android:layout_marginBottom="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button10"
+        android:layout_alignEnd="@+id/ratingBar2"
+        android:layout_alignRight="@+id/ratingBar2"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="assignment name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="report"
+        android:text="report"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignStart="@+id/button10" />
+
+</RelativeLayout>
+
+
